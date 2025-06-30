@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/donidOns/php-app.git'
+                git branch: 'main', url: 'https://github.com/donidOns/php-app.git'
             }
         }
         stage('Install Dependencies') {
