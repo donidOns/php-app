@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Clone Repository') {
-            steps {
-                git branch: 'main', url: 'https://github.com/donidOns/php-app.git'
-            }
-        }
         stage('Install Dependencies') {
             steps {
                 sh 'echo "No composer.json, skip install dependencies"'
